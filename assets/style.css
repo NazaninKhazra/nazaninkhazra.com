@@ -1,0 +1,201 @@
+/* Nazanin Khazra — site styles */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --ink: #1a1a1a;
+  --muted: #666;
+  --rule: #e0e0e0;
+  --accent: #1e3765;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(30, 55, 101, 0.25);
+}
+a:hover { border-bottom-color: var(--accent); }
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+header {
+  border-bottom: 1px solid var(--rule);
+}
+.header-inner {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 26px 0 22px;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+}
+.brand {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  color: var(--ink);
+  border: 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 26px;
+}
+nav a {
+  color: var(--muted);
+  font-size: 14.5px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  border: 0;
+  padding-bottom: 2px;
+}
+nav a:hover, nav a.active { color: var(--ink); }
+nav a.active { border-bottom: 1.5px solid var(--ink); }
+
+/* Content */
+main.wrap { padding: 56px 24px 96px; }
+
+h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.3;
+  margin: 48px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+}
+h2:first-child { margin-top: 0; }
+h3 {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 16px;
+  margin: 28px 0 8px;
+}
+p { margin: 0 0 16px; }
+ul, ol { margin: 0 0 16px; padding-left: 22px; }
+li { margin: 6px 0; }
+.muted { color: var(--muted); }
+.small { font-size: 14.5px; }
+em { font-style: italic; }
+
+/* Home */
+.intro {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.intro img, .intro .photo {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  background: #f0f0f0;
+}
+.intro .photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 13px;
+  text-align: center;
+  padding: 12px;
+}
+.title-line {
+  color: var(--muted);
+  font-size: 16px;
+  margin: 0 0 22px;
+}
+.contact {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 14.5px;
+  color: var(--muted);
+}
+.contact a { margin-right: 18px; }
+
+/* Lists of papers / courses */
+.item { margin: 0 0 26px; }
+.item .t {
+  font-family: var(--serif);
+  font-size: 18.5px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 3px;
+}
+.item .t a { border-bottom-color: transparent; }
+.item .t a:hover { border-bottom-color: var(--accent); }
+.item .meta {
+  color: var(--muted);
+  font-size: 14.5px;
+  margin: 0 0 6px;
+}
+.item .desc { margin: 0; }
+.item .links { font-size: 14px; margin-top: 4px; }
+.item .links a { margin-right: 14px; }
+
+/* Definition-style rows */
+.row {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.row:last-child { border-bottom: 0; }
+.row .k { color: var(--muted); font-size: 14.5px; padding-top: 2px; }
+
+/* Placeholder marker */
+.placeholder {
+  display: inline-block;
+  border: 1px dashed var(--accent);
+  color: var(--accent);
+  padding: 1px 10px;
+  font-size: 14px;
+}
+
+footer {
+  border-top: 1px solid var(--rule);
+  padding: 20px 0 40px;
+  color: var(--muted);
+  font-size: 13.5px;
+}
+
+@media (max-width: 640px) {
+  .intro { grid-template-columns: 1fr; gap: 24px; }
+  .intro img, .intro .photo { width: 160px; height: 200px; }
+  h1 { font-size: 32px; }
+  .row { grid-template-columns: 1fr; gap: 2px; }
+  nav ul { gap: 18px; flex-wrap: wrap; }
+}
