@@ -5,7 +5,7 @@
   --ink: #1a1a1a;
   --muted: #666;
   --rule: #e0e0e0;
-  --accent: #1e3765;
+  --accent: #7a1f2b;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 }
@@ -72,7 +72,7 @@ nav a {
   padding-bottom: 2px;
 }
 nav a:hover, nav a.active { color: var(--ink); }
-nav a.active { border-bottom: 1.5px solid var(--ink); }
+nav a.active { color: var(--ink); border-bottom: 1.5px solid var(--accent); }
 
 /* Content */
 main.wrap { padding: 56px 24px 96px; }
@@ -94,6 +94,7 @@ h2 {
   padding-bottom: 8px;
   border-bottom: 1px solid var(--rule);
 }
+h2::before { content: ""; display: block; width: 36px; border-top: 2px solid var(--accent); margin-bottom: 12px; }
 h2:first-child { margin-top: 0; }
 h3 {
   font-family: var(--sans);
@@ -136,6 +137,7 @@ em { font-style: italic; }
   font-size: 16px;
   margin: 0 0 22px;
 }
+.intro h1::after { content: ""; display: block; width: 36px; border-top: 2px solid var(--accent); margin: 14px 0 12px; }
 .contact {
   margin-top: 28px;
   padding-top: 16px;
@@ -143,7 +145,7 @@ em { font-style: italic; }
   font-size: 14.5px;
   color: var(--muted);
 }
-.contact a { margin-right: 18px; }
+.contact a, .contact span { margin-right: 18px; }
 
 /* Lists of papers / courses */
 .item { margin: 0 0 26px; }
