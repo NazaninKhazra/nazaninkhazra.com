@@ -4,8 +4,8 @@ Personal academic site. Plain HTML and CSS on GitHub Pages; no build step. Edit 
 
 ## Pages
 - `index.html` — home
-- `teaching.html` — courses, course materials, student comments, resources for instructors and TAs
-- `research.html` — working papers, pedagogy, book, resting papers, student research symposia
+- `teaching.html` — courses, course materials, resources for instructors and TAs
+- `research.html` — working papers, pedagogy, book, student research symposia
 - `news.html` — awards and certificates, press coverage, talks, service and volunteering
 - `students.html` — "For Students": letters, guest lectures, RA positions, data catalogue
 - `letters.html` — recommendation-letter policy

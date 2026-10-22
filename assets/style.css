@@ -190,7 +190,11 @@ em { font-style: italic; }
 .news .src { display: block; color: var(--muted); font-size: 14px; }
 
 /* Materials rows: course on the left, link list on the right */
-.row .links a { margin-right: 2px; }
+.row .links a { margin-right: 2px; border-bottom-color: transparent; }
+.row .links a:hover { border-bottom-color: var(--accent); }
+.row .links .sub { display: block; margin-top: 6px; }
+.row .links .group { margin-top: 6px; }
+.row .links .group .sub { display: inline; margin: 0 4px 0 0; }
 .row .links .sep { color: var(--muted); margin: 0 6px; }
 .row .sub { color: var(--muted); font-size: 14.5px; }
 
