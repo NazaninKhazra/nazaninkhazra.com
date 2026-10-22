@@ -1,34 +1,31 @@
 # nazaninkhazra.com
 
-Plain HTML site, hosted on GitHub Pages. No build step.
+Personal academic site. Plain HTML and CSS on GitHub Pages; no build step. Edit a file, commit, push, and the site updates in about a minute.
 
-## Files
-- `index.html`, `research.html`, `teaching.html`, `students.html`, `letters.html` — the pages
-- `assets/style.css` — all styling
-- `assets/photo.jpg` — ADD THIS (your portrait; ~800px wide is plenty). Then in `index.html` replace
-  `<div class="photo">Add assets/photo.jpg</div>` with `<img src="assets/photo.jpg" alt="Nazanin Khazra">`
-- `assets/cv.pdf` — ADD THIS (the CV link in the nav points here)
-- `CNAME` — tells GitHub Pages your domain
+## Pages
+- `index.html` — home
+- `teaching.html` — courses, awards and certificates, course materials, student research symposia, news
+- `research.html` — working papers, pedagogy, book, resting papers
+- `students.html` — "For Students": letters, guest lectures, RA positions, data catalogue, teaching resources
+- `letters.html` — recommendation-letter policy
+- `teaching-the-frontier.html` — guest-lecture programme for PhD students
+- `data-catalogue.html` — Data for Economists catalogue (self-contained, data in the page's script)
+- `econ-data-ta.html` — system prompt for the Econ Data TA
+- `student-comments.html` — anonymous course-evaluation comments
+- `resources.html` — redirect to `students.html` (old URL)
 
-## Publish (one time)
-1. Create a new public repo on GitHub named `nazaninkhazra.com` (any name works).
-2. Upload everything in this folder (drag-and-drop on GitHub works, or `git push`).
-3. Repo → Settings → Pages → Source: "Deploy from a branch" → Branch: `main`, folder `/ (root)` → Save.
-4. Settings → Pages → Custom domain: `nazaninkhazra.com` → Save. Tick "Enforce HTTPS" once it appears.
+## Assets
+- `assets/style.css` — all styling (shared by every page)
+- `assets/photo.jpg` — portrait, 800×1000
+- `assets/cv.pdf` — CV (linked from the nav and the home page)
+- `assets/favicon.png`, `assets/apple-touch-icon.png` — site icon
+- `assets/syllabi/`, `assets/awards/` — PDFs linked from the Teaching page
 
-## Point your Google domain at GitHub
-In Google Domains / Squarespace Domains → DNS → custom records, add:
+## Conventions
+- The nav is copied by hand into every page: Home · Teaching · Research · For Students · CV. Change it everywhere at once.
+- Every page has a `<meta name="description">` and Open Graph tags in `<head>`; add them to any new page.
+- One narrow column, black on white, one burgundy accent (`#7a1f2b`). Source Serif headings, Inter body. No cards, buttons, or banners.
+- Papers: title · "with Full Name" · status line · link row. No abstracts.
 
-| Type  | Host | Data |
-|-------|------|------|
-| A     | @    | 185.199.108.153 |
-| A     | @    | 185.199.109.153 |
-| A     | @    | 185.199.110.153 |
-| A     | @    | 185.199.111.153 |
-| CNAME | www  | YOUR-GITHUB-USERNAME.github.io |
-
-Delete the old records that pointed to Google Sites. DNS takes up to a few hours.
-
-## Editing
-Edit the `.html` file, commit, done. The site updates in about a minute.
-Nav is copied at the top of each page — if you add a page, add the link in all five files.
+## Domain
+`CNAME` holds `nazaninkhazra.com`. DNS is at Squarespace Domains (A records to GitHub Pages, `www` CNAME to the GitHub Pages host).
