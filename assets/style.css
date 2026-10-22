@@ -199,5 +199,6 @@ footer {
   .intro img, .intro .photo { width: 160px; height: 200px; }
   h1 { font-size: 32px; }
   .row { grid-template-columns: 1fr; gap: 2px; }
-  nav ul { gap: 18px; flex-wrap: wrap; }
+  nav ul { gap: 4px 18px; flex-wrap: wrap; }
+  .header-inner { padding: 20px 24px 16px; gap: 8px 32px; }
 }
