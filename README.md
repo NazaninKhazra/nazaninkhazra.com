@@ -6,7 +6,7 @@ Personal academic site. Plain HTML and CSS on GitHub Pages; no build step. Edit 
 - `index.html` — home
 - `teaching.html` — courses, course materials, student comments, resources for instructors and TAs
 - `research.html` — working papers, pedagogy, book, resting papers, student research symposia
-- `news.html` — awards and certificates, press coverage, talks
+- `news.html` — awards and certificates, press coverage, talks, service and volunteering
 - `students.html` — "For Students": letters, guest lectures, RA positions, data catalogue
 - `letters.html` — recommendation-letter policy
 - `teaching-the-frontier.html` — guest-lecture programme for PhD students
