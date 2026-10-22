@@ -18,7 +18,7 @@ Personal academic site. Plain HTML and CSS on GitHub Pages; no build step. Edit 
 ## Assets
 - `assets/style.css` — all styling (shared by every page)
 - `assets/photo.jpg` — portrait, 800×1000
-- `assets/cv.pdf` — CV (linked from the nav and the home page)
+- `assets/cv.pdf` — CV (linked from the nav and the home page); source in `assets/cv/cv.tex`, compile with pdflatex and commit both
 - `assets/favicon.png`, `assets/apple-touch-icon.png` — site icon
 - `assets/syllabi/`, `assets/materials/`, `assets/awards/` — PDFs linked from the Teaching and News pages
 

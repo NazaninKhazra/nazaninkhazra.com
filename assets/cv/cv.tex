@@ -1,0 +1,288 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\textheight=10in
+\pagestyle{empty}
+\raggedright
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+	\vspace*{-9pt}
+	\begin{verse}
+		\textbf{#1}   #2
+	\end{verse}
+}
+
+\newcommand{\lineunder} {
+	\vspace*{-8pt} \par
+	\noindent\hspace*{-18pt} \hrulefill \par
+}
+
+\newcommand{\header} [1] {
+	\par\noindent{\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+	\vspace*{-6pt} \par \lineunder
+}
+
+\newcommand{\employer} [3] {
+	{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+	\vspace*{-10pt}
+	\begin{center}
+		{\Huge \scshape {#1}}\\
+		#2 \\ #3
+	\end{center}
+	\vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+	\begin{list}
+		{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+	\end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+	\textbf{#1} #2 $\bullet$ #3\\
+	#4 \\
+	\vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+	\textbf{#1} #2 $\bullet$ #3\\
+	#4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[hidelinks]{hyperref}
+\usepackage{makebox}
+\begin{document}
+% Contact information part
+\vspace*{-60pt}
+
+%==== Profile ====%
+
+\begin{center}
+	{\Huge \scshape Nazanin Khazra}\\
+ nazanin.khazra@utoronto.ca $\cdot$ \url{https://nazaninkhazra.com}
+\end{center}
+
+\vspace*{-4mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Positions       %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Current Position}
+\vspace*{3pt}
+\textbf{University of Toronto} \hfill 2020--present\\
+Assistant Professor, Teaching Stream, Department of Economics \\
+\vspace{5mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Affiliations    %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Additional Affiliations}
+\vspace*{3pt}
+\textbf{School of Cities, University of Toronto} \hfill 2022--present\\
+\vspace{5mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Service         %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Notable University Service}
+\vspace*{3pt}{\textbf{Academic Board, Governing Council, U of T}} (elected member) \hfill 2025--2030\\
+\vspace{5mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Education       %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\header{Education}
+\vspace*{3pt}
+\textbf{University of Illinois at Urbana-Champaign}\\
+Ph.D. in Economics \hfill 2020\\
+\textbf{Sharif University of Technology}\\
+M.Sc. in Economics \hfill 2012\\
+\textbf{University of Tehran} \\
+B.Sc. in Economics \hfill 2009\\
+\vspace{5mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Research Fields      %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\header{Research Interests}
+\vspace*{3pt}
+Applied microeconomics, real estate, household finance, causal machine learning, and artificial intelligence\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Working Papers       %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\raggedright
+\vspace{5mm}
+\header{Working Papers and Research in Progress}
+\vspace*{10pt}
+\textbf{Heterogeneities in House Price Elasticity of Consumption}\\
+\vspace*{10pt}
+\textbf{Does Airbnb Reduce Matching Frictions in the Housing Market?} with Abdollah Farhoodi and Peter Christensen\\
+\vspace*{10pt}
+\textbf{The Economic Impact of Menstrual Hygiene Products on Household Expenditures: An Analysis of Costs and Financial Burden}\\
+\vspace*{10pt}
+\textbf{Menstrual Health Policy Implementation: A Review of Tax, Access, and Infrastructure Across Contexts}, co-authored with students
+
+\raggedright
+\vspace{5mm}
+\header{Articles and Working Papers in Pedagogy}
+\vspace*{3pt}
+\textbf{Generative AI in Action: Using AI to Scaffold Economic Writing Skill Development}, with Victoria Sheldon. Working Paper 809, Department of Economics, University of Toronto, December 2025. \\
+\vspace*{10pt}
+Khazra, N. (2023). \textbf{Facilitating Scaffolding and Team Projects in Non-Computer Science Courses with GitHub Classroom.} In deNoyelles, A., Bauer, S., \& Wyatt, S. (Eds.), Teaching Online Pedagogical Repository. Orlando, FL: University of Central Florida Center for Distributed Learning.  \\\vspace*{10pt}
+
+\textbf{Beyond Apprenticeship: A Co-Authored Research Community Model for Undergraduate Economics Education}
+\\\vspace*{10pt}
+
+\raggedright
+\vspace{5mm}
+\header{Resting Papers}
+\vspace*{3pt}
+\vspace*{10pt}
+\textbf{Investment Decisions Based on Profit Status: Evidence from Hospitals} \\\vspace*{10pt}
+\textbf{Emergence of Tech-Econ: Teaching Machine Learning and Big-Data Skills to Economics Students}
+
+\raggedright
+\vspace{5mm}
+\header{Open-Source Books and Teaching Resources}
+\vspace*{3pt}
+\textbf{Learning Microeconomics with Python (MicPy)} with Mathew Laad (draft available by request)\\\vspace*{10pt}
+\textbf{Research Mentoring TA Manual}: an open-source manual for training teaching assistants as research mentors in research-based economics courses (fourteen chapters, rubrics, templates, and a feedback quiz). \url{https://github.com/NazaninKhazra/research-mentoring-ta-manual}\\\vspace*{10pt}
+\textbf{Econ Data TA}: an AI teaching assistant for project-based data courses, released as a system prompt for other instructors. \url{https://nazaninkhazra.com/econ-data-ta.html}\\\vspace*{10pt}
+\textbf{Data for Economists}: an open catalogue of 75 datasets with suggested research questions for project-based economics courses. \url{https://nazaninkhazra.com/data-catalogue.html}\\\vspace*{10pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Grants               %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{5mm}
+\header{Grants}
+\vspace*{3pt}
+\textbf{SSHRC Insight Development Grant}, pass-through of taxes on menstrual products \hfill 2026--2028\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Research Experience  %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{5mm}
+\header{Research Experience}
+\vspace*{3pt}
+\textbf{Khazra Research Lab (K.R.L.) for Applied Economics and Data Science}, Principal Investigator \hfill 2025--present\\
+Undergraduate, MA, and PhD research assistants; monthly research seminars\\
+\vspace*{10pt}
+\textbf{Big-Data in Environmental Economics and Policy Group} \hfill 2018--2020\\
+Collaboration with National Center for Supercomputing Applications\\
+\vspace*{10pt}
+\textbf{Moody's Analytics} \hfill Summer 2018\\
+Quantitative Research Intern\\
+\vspace*{10pt}
+\textbf{National Bureau of Economic Research}\hfill Summer 2017\\
+Research Assistant for Prof. Jialan Wang (UIUC)\\
+\vspace*{10pt}
+\textbf{University of Illinois at Urbana-Champaign}\hfill  2015\\
+Research Assistant for Prof. JiHyung Lee  \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Teaching        %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{5mm}
+ \header{Teaching}
+ \vspace*{3pt}
+ \textbf{Applied Causal Machine Learning (ECO1465, MA/PhD)}, U of T \hfill 2024--present\\
+Select topics: \textit{Double Machine Learning, Generalized Random Forest, DeepIV} \\
+ \vspace*{10pt}
+\textbf{Big Data Tools and Applied ML for Economists (ECO250Y0)} \hfill Aug. 2023\\
+University of Oxford, U of T Summer Abroad\\
+Select topics: \textit{ChatGPT API, Cross Validation, Bagging, Boosting, Random Forest}\\
+\vspace*{10pt}
+\textbf{Data Tools for Economists (ECO225)}, U of T \hfill 2020--present\\
+Select topics: \textit{GIS mapping, HTML and API web scraping, working with GitHub, text analysis} \\
+\vspace*{10pt}
+\textbf{Microeconomic Theory and Applications (ECO204, Commerce)}, U of T \hfill 2025--present\\
+Select topics: \textit{constrained optimization in Python, Game Theory in Python}\\
+\vspace*{10pt}
+\textbf{Microeconomic Theory (ECO200)}, U of T \hfill 2020--2025\\
+\vspace*{10pt}
+\textbf{Applied Machine Learning in Economics (ECON 490)}, UIUC  \hfill  2019--2020\\
+ Select topics: \textit{LASSO and Ridge, Bagging, Boosting, Random Forest, Support Vector Machines, Neural Networks}\\
+ 	\begin{itemize}
+ 	    \item[--] Robert E. Demarest Memorial Teaching Award
+ 	    \item[--] Ranked in the top 5\% of all teachers in the university
+ 	\end{itemize}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%         Awards        %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{5mm}
+ \header{Honors and Awards}
+ \vspace*{3pt}
+Outstanding Teaching Award, Early Career, Faculty of Arts \& Science, U of T \hfill 2024\\
+Merit Award (Excellence/Small Group), Economics, U of T \hfill  2022--2026\\
+Robert E. Demarest Memorial Teaching Award, UIUC \hfill 2019\\
+\textit{Outstanding}, List of Teachers Ranked as Excellent, UIUC \hfill  2015--2019\\
+ Summer Research Fellowship, UIUC  \hfill  2015 \\
+ Department Fellowship, UIUC \hfill  2014\\
+ Ranked 5th in the National Exam for Economics Graduate Schools \hfill  2009\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%         Certificates  %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{5mm}
+ \header{Certificates}
+ \vspace*{3pt}
+ Certificate in Effective College Instruction, ACUE and ACE \hfill  Mar. 2022\\
+ Graduate Teacher Certificate, CITL, UIUC \hfill May 2019\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%         Workshops     %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{5mm}
+ \header{Workshops}
+ \vspace*{3pt}
+ML Bootcamp for Faculty, U of T Data Science Institute \hfill June 2022, 2026\\
+ Machine Learning Summer Program, University of Chicago \hfill Aug 2021 \\
+ CSWEP Mentoring Workshop, American Economic Association \hfill Jan 2022\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%         Conference    %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\header{Select Conference Presentations}
+TeachECONference, University College London \hfill 2026\\
+CNEE panel, Canadian Economics Association \hfill 2026\\
+Mount Royal University SoTL Symposium \hfill Oct. 2025\\
+Canadian Economics Association \hfill May 2025\\
+TeachECONference, University College London \hfill June 2024\\
+Pedagogy seminar, University of British Columbia \hfill May 2024\\
+Real Estate Seminar, City University of New York \hfill May 2023\\
+TeachECONference, University College London\hfill June 2022\\
+American Economic Association (ASSA) \hfill Jan 2022 \\
+American Real Estate and Urban Economics Association, ASSA  \hfill Jan 2022\\
+American Real Estate and Urban Economics Association, National \hfill June 2021\\
+AEA Conference on Teaching and Research in Economic Education \hfill June 2021\\
+TeachECONference, University College London \hfill June 2021\\
+Urban Economics Association (UEA)  \hfill October 2020\\
+Applied Economics, Regional, and Urban Studies Conference (AERUS) \hfill April 2019\\
+
+\vspace{5mm}
+\header{Conference Organizer}
+Tech-Econference, U of T undergraduate research symposium (6 editions) \hfill  2021--2026\\
+Masters in Economics Student Research Symposium (MERS), with C. Ward \hfill 2026\\
+
+\vspace{5mm}
+ \header{Relevant Volunteer Experience}
+ Volunteer Researcher, Canadian Economics Diversity Committee (CEDC) \hfill 2023--present\\
+ Liaison for U of T, CSWEP (American Economic Association) \hfill 2022--present\\
+ Organizer, U of T Economics team, CIBC Run for the Cure (five editions) \hfill 2022--present\\
+ Mock job-market interviews for women PhD students, U of T Economics \hfill 2023--present\\
+
+\end{document}
