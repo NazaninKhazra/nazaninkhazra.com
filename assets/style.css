@@ -178,6 +178,34 @@ em { font-style: italic; }
 .row:last-child { border-bottom: 0; }
 .row .k { color: var(--muted); font-size: 14.5px; padding-top: 2px; }
 
+/* Student comments */
+.quotes { list-style: none; margin: 0 0 8px; padding: 0; }
+.quote { margin: 0 0 22px; padding: 2px 0 2px 18px; border-left: 2px solid var(--accent); }
+.quote p { font-family: var(--serif); font-size: 17.5px; line-height: 1.55; margin: 0 0 6px; }
+.quote .who { color: var(--muted); font-size: 14px; }
+
+/* News list */
+.news { list-style: none; margin: 0 0 16px; padding: 0; }
+.news li { margin: 0 0 10px; }
+.news .src { display: block; color: var(--muted); font-size: 14px; }
+
+/* Materials rows: course on the left, link list on the right */
+.row .links a { margin-right: 2px; }
+.row .links .sep { color: var(--muted); margin: 0 6px; }
+.row .sub { color: var(--muted); font-size: 14.5px; }
+
+/* Preformatted text (prompts, code) */
+pre {
+  background: #f7f7f7;
+  border: 1px solid var(--rule);
+  padding: 16px 18px;
+  overflow: auto;
+  font-size: 14px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
 /* Placeholder marker */
 .placeholder {
   display: inline-block;
